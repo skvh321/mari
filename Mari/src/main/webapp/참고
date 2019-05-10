@@ -1,11 +1,28 @@
 맨위 src/main/java/sample 에 샘플클래스들 참고
-com.eee.mari.기능이름 아래 DTO,DAO,Service 클래스 작성
+com.eee.mari."기능이름" 아래 DTO,DAO,Service 클래스 작성
 
-mapper는 src/main/resources/mybatis/mappers/ 에 *_mapper.xml형식으로
 
-WEB-INF/views/basicView/sample.jsp jsp샘플페이지
+mapper는 src/main/resources/mybatis/mappers/에 "기능이름"_mapper.xml형식으로
+
+
+
+view페이지 방법1
+WEB-INF/views/기능이름/페이지이름.jsp 샘플페이지복사 후 
+컨트롤러에 return을  기능이름/페이지이름
+WEB-INF/views/sample.jsp jsp샘플페이지
+
+view페이지 방법2(tiles)
+WEB-INF/views/기능이름/페이지이름.jsp tiles샘플페이지복사 후
+컨트롤러에 return을 tiles/기능이름/페이지이름 
+WEB-INF/views/tilesSample.jsp tiles샘플페이지
+
+view페이지 둘중 아무거나 하나로만 쓰세요
+
 
 설정 xml파일들은  WEB-INF/spring/ 안에 
 
 메이븐 추가 목록
  mybatis
+ cglib
+ tiles
+ aspectj
