@@ -9,7 +9,7 @@ public class SampleDAO {
 	@Autowired
 	SqlSession ss;
 	public void sample() {
-		System.out.println("ss");
+		
 		System.out.println(ss.selectList("sample.select"));
 	}
 }

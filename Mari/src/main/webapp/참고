@@ -1,4 +1,5 @@
 맨위 src/main/java/sample 에 샘플클래스들 참고
+com.eee.mari.기능이름 아래 DTO,DAO,Service 클래스 작성
 
 mapper는 src/main/resources/mybatis/mappers/ 에 *_mapper.xml형식으로
 
@@ -6,4 +7,5 @@ WEB-INF/views/basicView/sample.jsp jsp샘플페이지
 
 설정 xml파일들은  WEB-INF/spring/ 안에 
 
-메이븐은 mybatis관련 라이브러리만 추가함(나머지추가필요)
+메이븐 추가 목록
+ mybatis
