@@ -16,7 +16,7 @@
 		<div class="header_content d-flex flex-column align-items-center justify-content-lg-end justify-content-center">
 			
 			<!-- Logo -->
-			<div class="logo"><a href="#"><img class="logo_1" src="/resources/images/logo.png" alt=""><img class="logo_2" src="/resources/images/logo_2.png" alt=""><img class="logo_3" src="/resources/images/logo_3.png" alt=""></a></div>
+			<div class="logo"><a href="#"><img class="logo_1" src="${pageContext.request.contextPath}/resources/images/logo.png" alt=""><img class="logo_2" src="${pageContext.request.contextPath}/resources/images/logo_2.png" alt=""><img class="logo_3" src="${pageContext.request.contextPath}/resources/images/logo_3.png" alt=""></a></div>
 
 			<!-- Main Nav -->
 			<nav class="main_nav">
@@ -63,7 +63,7 @@
 			<!-- Search Panel -->
 			<div class="search_panel">
 				<div class="search_panel_content d-flex flex-row align-items-center justify-content-start">
-					<img src="/resources/images/search.png" alt="">
+					<img src="${pageContext.request.contextPath}/resources/images/search.png" alt="">
 					<form action="#" class="search_form">
 						<input type="text" class="search_input" placeholder="Type your search here" required="required">
 					</form>
@@ -78,7 +78,7 @@
 
 	<div class="logo_overlay">
 		<div class="logo_overlay_content d-flex flex-column align-items-center justify-content-center">
-			<div class="logo"><a href="#"><img src="/resources/images/logo_3.png" alt=""></a></div>
+			<div class="logo"><a href="#"><img src="${pageContext.request.contextPath}/resources/images/logo_3.png" alt=""></a></div>
 		</div>
 	</div>
 
@@ -127,7 +127,7 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="/resources/images/home.jpg" data-speed="0.8"></div>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/home.jpg" data-speed="0.8"></div>
 		<div class="home_container d-flex flex-column align-items-center justify-content-center">
 			<div class="home_title"><h1>Book Your Stay</h1></div>
 			<div class="home_text text-center">Fusce erat dui, venenatis et erat in, vulputate dignissim lacus. Donec vitae tempus dolor, sit amet elementum lorem. Ut cursus tempor turpis.</div>
@@ -205,7 +205,7 @@
 							
 							<!-- Slide -->
 							<div class="gallery_slide">
-								<img src="/resources/images/gallery_1.jpg" alt="">
+								<img src="${pageContext.request.contextPath}/resources/images/gallery_1.jpg" alt="">
 								<div class="gallery_overlay">
 									<div class="text-center d-flex flex-column align-items-center justify-content-center">
 										<a href="#">
@@ -218,7 +218,7 @@
 
 							<!-- Slide -->
 							<div class="gallery_slide">
-								<img src="/resources/images/gallery_2.jpg" alt="">
+								<img src="${pageContext.request.contextPath}/resources/images/gallery_2.jpg" alt="">
 								<div class="gallery_overlay">
 									<div class="text-center d-flex flex-column align-items-center justify-content-center">
 										<a href="#">
@@ -231,7 +231,7 @@
 
 							<!-- Slide -->
 							<div class="gallery_slide">
-								<img src="/resources/images/gallery_3.jpg" alt="">
+								<img src="${pageContext.request.contextPath}/resources/images/gallery_3.jpg" alt="">
 								<div class="gallery_overlay">
 									<div class="text-center d-flex flex-column align-items-center justify-content-center">
 										<a href="#">
@@ -244,7 +244,7 @@
 
 							<!-- Slide -->
 							<div class="gallery_slide">
-								<img src="/resources/images/gallery_4.jpg" alt="">
+								<img src="${pageContext.request.contextPath}/resources/images/gallery_4.jpg" alt="">
 								<div class="gallery_overlay">
 									<div class="text-center d-flex flex-column align-items-center justify-content-center">
 										<a href="#">
@@ -306,15 +306,15 @@
 						<div class="rooms_list">
 							<ul>
 								<li class="d-flex flex-row align-items-center justify-content-start">
-									<img src="/resources/images/check.png" alt="">
+									<img src="${pageContext.request.contextPath}/resources/images/check.png" alt="">
 									<span>Morbi tempus malesuada erat sed</span>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
-									<img src="/resources/images/check.png" alt="">
+									<img src="${pageContext.request.contextPath}/resources/images/check.png" alt="">
 									<span>Tempus malesuada erat sed</span>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
-									<img src="/resources/images/check.png" alt="">
+									<img src="${pageContext.request.contextPath}/resources/images/check.png" alt="">
 									<span>Pellentesque vel neque finibus elit</span>
 								</li>
 							</ul>
@@ -355,7 +355,7 @@
 									<span>Tempus malesuada erat sed</span>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
-									<img src="/resources/images/check.png" alt="">
+									<img src="${pageContext.request.contextPath}/resources/images/check.png" alt="">
 									<span>Pellentesque vel neque finibus elit</span>
 								</li>
 							</ul>
@@ -482,7 +482,7 @@
 									<p>Maecenas sollicitudin tincidunt maximus. Morbi tempus malesuada erat sed pellentesque. Donec pharetra mattis nulla, id laoreet neque scelerisque at. Quisque eget sem non ligula consectetur ultrices in quis augue. Donec imperd iet leo eget tortor dictum, eget varius eros sagittis. Curabitur tempor dignissim massa ut faucibus sollicitudin tinci dunt maximus. Morbi tempus malesuada erat sed pellentesque. Donec pharetra mattis nulla, id laoreet neque scele risque at. Quisque eget.</p>
 								</div>
 								<div class="testimonial_author text-center">
-									<div class="testimonial_author_image"><img src="/resources/images/author_1.jpg" alt=""></div>
+									<div class="testimonial_author_image"><img src="${pageContext.request.contextPath}/resources/images/author_1.jpg" alt=""></div>
 									<div class="testimonial_author_name"><a href="#">Maria Smith,</a><span> Client</span></div>
 								</div>
 							</div>
@@ -493,7 +493,7 @@
 									<p>Maecenas sollicitudin tincidunt maximus. Morbi tempus malesuada erat sed pellentesque. Donec pharetra mattis nulla, id laoreet neque scelerisque at. Quisque eget sem non ligula consectetur ultrices in quis augue. Donec imperd iet leo eget tortor dictum, eget varius eros sagittis. Curabitur tempor dignissim massa ut faucibus sollicitudin tinci dunt maximus. Morbi tempus malesuada erat sed pellentesque. Donec pharetra mattis nulla, id laoreet neque scele risque at. Quisque eget.</p>
 								</div>
 								<div class="testimonial_author text-center">
-									<div class="testimonial_author_image"><img src="/resources/images/author_1.jpg" alt=""></div>
+									<div class="testimonial_author_image"><img src="${pageContext.request.contextPath}/resources/images/author_1.jpg" alt=""></div>
 									<div class="testimonial_author_name"><a href="#">Maria Smith,</a><span> Client</span></div>
 								</div>
 							</div>
@@ -504,7 +504,7 @@
 									<p>Maecenas sollicitudin tincidunt maximus. Morbi tempus malesuada erat sed pellentesque. Donec pharetra mattis nulla, id laoreet neque scelerisque at. Quisque eget sem non ligula consectetur ultrices in quis augue. Donec imperd iet leo eget tortor dictum, eget varius eros sagittis. Curabitur tempor dignissim massa ut faucibus sollicitudin tinci dunt maximus. Morbi tempus malesuada erat sed pellentesque. Donec pharetra mattis nulla, id laoreet neque scele risque at. Quisque eget.</p>
 								</div>
 								<div class="testimonial_author text-center">
-									<div class="testimonial_author_image"><img src="/resources/images/author_1.jpg" alt=""></div>
+									<div class="testimonial_author_image"><img src="${pageContext.request.contextPath}/resources/images/author_1.jpg" alt=""></div>
 									<div class="testimonial_author_name"><a href="#">Maria Smith,</a><span> Client</span></div>
 								</div>
 							</div>
@@ -519,12 +519,12 @@
 	<!-- Footer -->
 
 	<footer class="footer">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="/resources/images/footer.jpg" data-speed="0.8"></div>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/footer.jpg" data-speed="0.8"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="footer_logo text-center">
-						<a href="#"><img src="/resources/images/logo.png" alt=""></a>
+						<a href="#"><img src="${pageContext.request.contextPath}/resources/images/logo.png" alt=""></a>
 					</div>
 					<div class="footer_content">
 						<div class="row">

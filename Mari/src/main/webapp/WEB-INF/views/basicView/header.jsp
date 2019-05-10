@@ -2,7 +2,7 @@
 		<div class="header_content d-flex flex-column align-items-center justify-content-lg-end justify-content-center">
 			
 			<!-- Logo -->
-			<div class="logo"><a href="#"><img class="logo_1" src="/resources/images/logo.png" alt=""><img class="logo_2" src="/resources/images/logo_2.png" alt=""><img class="logo_3" src="/resources/images/logo_3.png" alt=""></a></div>
+			<div class="logo"><a href="#"><img class="logo_1" src="${pageContext.request.contextPath}/resources/images/logo.png" alt=""><img class="logo_2" src="${pageContext.request.contextPath}/resources/images/logo_2.png" alt=""><img class="logo_3" src="${pageContext.request.contextPath}/resources/images/logo_3.png" alt=""></a></div>
 
 			<!-- Main Nav -->
 			<nav class="main_nav">
@@ -49,7 +49,7 @@
 			<!-- Search Panel -->
 			<div class="search_panel">
 				<div class="search_panel_content d-flex flex-row align-items-center justify-content-start">
-					<img src="/resources/images/search.png" alt="">
+					<img src="${pageContext.request.contextPath}/resources/images/search.png" alt="">
 					<form action="#" class="search_form">
 						<input type="text" class="search_input" placeholder="Type your search here" required="required">
 					</form>
@@ -63,7 +63,7 @@
 
 	<div class="logo_overlay">
 		<div class="logo_overlay_content d-flex flex-column align-items-center justify-content-center">
-			<div class="logo"><a href="#"><img src="/resources/images/logo_3.png" alt=""></a></div>
+			<div class="logo"><a href="#"><img src="${pageContext.request.contextPath}/resources/images/logo_3.png" alt=""></a></div>
 		</div>
 	</div>
 

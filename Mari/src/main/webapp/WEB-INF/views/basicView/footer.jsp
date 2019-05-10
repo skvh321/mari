@@ -1,10 +1,10 @@
 <footer class="footer">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="/resources/images/footer.jpg" data-speed="0.8"></div>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/footer.jpg" data-speed="0.8"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="footer_logo text-center">
-						<a href="#"><img src="/resources/images/logo.png" alt=""></a>
+						<a href="#"><img src="${pageContext.request.contextPath}/resources/images/logo.png" alt=""></a>
 					</div>
 					<div class="footer_content">
 						<div class="row">
