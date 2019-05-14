@@ -1,5 +1,7 @@
 package com.eee.mari.sample;
 
+import java.util.List;
+
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -14,14 +16,17 @@ public class SampleAOP {
 	
 	
 	@Around("within(com.eee.mari.sample.SampleDAO)")
-	public void sampleAop(ProceedingJoinPoint jp) {
+	public List sampleAop(ProceedingJoinPoint jp) {
 			logger.info("aop실행");
+			List list=null;
 			try {
-				jp.proceed();
+				logger.info(jp.getKind());
+				list=(List)jp.proceed();
 			} catch (Throwable e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			logger.info("aop실행");
+			return list;
 	}
 }

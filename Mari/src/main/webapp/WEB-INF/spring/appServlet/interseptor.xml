@@ -7,7 +7,7 @@
 
 	<mvc:interceptors>
 		<mvc:interceptor>
-			<mvc:mapping path="/**"/>
+			<mvc:mapping path="/sample/*"/>
 			<bean class="com.eee.mari.sample.Interceptor"/>
 		</mvc:interceptor>
 	</mvc:interceptors>

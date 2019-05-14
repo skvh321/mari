@@ -14,12 +14,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
+@RequestMapping("/sample")
 public class SampleController {
 	private static final Logger logger=LoggerFactory.getLogger(SampleController.class);
 	@Resource
 	SampleService service;
 	
-	@RequestMapping("/")
+	@RequestMapping("/list")
 	public String SampleCon(Model model) {
 		logger.info("sapleCon");
 		List list=service.sample();
