@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 <%@include file="/WEB-INF/views/basicView/resourceH.jsp" %>
 </head>
+<body>
 <div class="super_container">
 <%@include file="/WEB-INF/views/basicView/header.jsp" %>
 <div class="home">
@@ -30,7 +31,6 @@
 
 <%@include file="/WEB-INF/views/basicView/footer.jsp" %>
 </div>
-<body>
 <%@include file="/WEB-INF/views/basicView/resourceF.jsp" %>
 </body>
 </html>

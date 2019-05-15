@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="DS" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<bean id="DSS" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
 		<property name="url" value="jdbc:oracle:thin:@18.222.138.195:1521:xe"/>
 		<property name="username" value="root"/>
@@ -24,5 +24,18 @@
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="DS"/>
     </bean>
- 	
+ 	<bean id="DS" class="net.sf.log4jdbc.Log4jdbcProxyDataSource"> 
+	 	<constructor-arg ref="DSS" /> 
+ 		<property name="logFormatter"> 
+	 			<bean class="net.sf.log4jdbc.tools.Log4JdbcCustomFormatter"> 
+	 				<property name="loggingType" value="MULTI_LINE" /> 
+	 				<property name="sqlPrefix" value="SQL : "/> 
+	 				
+	 			</bean> 
+ 		</property>
+    </bean>
+
+
+
+
 </beans>
