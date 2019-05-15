@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
@@ -9,9 +9,9 @@ function fn_login(action) {
 	var b=document.getElementById("memberPwd").value;
 	
 	if(a==null || a=="" ){
-		alert("¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		alert("ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 	}else if(b==null || b==""){
-		alert("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		alert("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 	}else{
 	var formObj=document.createElement("form");
 	var id = document.createElement("input");
@@ -33,11 +33,21 @@ function fn_login(action) {
 	formObj.submit();
 	}
 }
-
-
 </script>
 <head>
-<meta charset="EUC-KR">
+<meta charset="utf-8">
+<c:if test='${not empty message }'>
+<script>
+window.onload=function()
+{
+  result();
+}
+
+function result(){
+	alert("ì•„ì´ë””ë‚˜  ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë¦½ë‹ˆë‹¤. ë‹¤ì‹œ ë¡œê·¸ì¸í•´ì£¼ì„¸ìš”");
+}
+</script>
+</c:if>
 <title>Insert title here</title>
 </head>
 <body>
@@ -62,8 +72,8 @@ function fn_login(action) {
 		</div>
 </div>
 
-<!-- ¹Ù·ÎÀ§ home class¿¡ data-image-src¿¡ ¿øÇÏ´Â »çÁø³ÖÀ¸½Ã°í -->
-<!--¿ä±â´Ù ³»¿ë  Áı¾î³ÖÀ¸¼¼¿ä-->
+<!-- ë°”ë¡œìœ„ home classì— data-image-srcì— ì›í•˜ëŠ” ì‚¬ì§„ë„£ìœ¼ì‹œê³  -->
+<!--ìš”ê¸°ë‹¤ ë‚´ìš©  ì§‘ì–´ë„£ìœ¼ì„¸ìš”-->
 
 </body>
 </html>
