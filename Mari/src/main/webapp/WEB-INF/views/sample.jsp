@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 <%@include file="/WEB-INF/views/basicView/resourceH.jsp" %>
 </head>
+<div class="super_container">
 <%@include file="/WEB-INF/views/basicView/header.jsp" %>
 <div class="home">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="${pageContext.request.contextPath}/resources/images/home.jpg" data-speed="0.8"></div>
@@ -28,6 +29,7 @@
 
 
 <%@include file="/WEB-INF/views/basicView/footer.jsp" %>
+</div>
 <body>
 <%@include file="/WEB-INF/views/basicView/resourceF.jsp" %>
 </body>
