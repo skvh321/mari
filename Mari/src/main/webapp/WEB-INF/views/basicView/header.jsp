@@ -1,3 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <header class="header">
 		<div class="header_content d-flex flex-column align-items-center justify-content-lg-end justify-content-center">
 			
@@ -39,8 +42,22 @@
 				</div>
 
 				<!-- Header Link -->
-				<div class="header_link"><a href="${pageContext.request.contextPath}/member/loginMember.do">Book Your Room Now</a></div>
-
+				<div class="header_link">
+				<c:choose>
+					<c:when test="${isLogOn==true and not empty memberInfo }">
+					<ul class="row">
+						<li><a href="${pageContext.request.contextPath}/mypage/myDetailInfo.do">${memberInfo.getName() }</a></li>
+						<li><a href="#">예약 확인</a></li>
+						<li><a href="${pageContext.request.contextPath}/member/logout.do">Log Out</a></li>
+					</ul>
+					</c:when>
+					<c:otherwise>
+						<a href="${pageContext.request.contextPath}/member/loginMember.do">Book Your Room Now</a>
+					</c:otherwise>
+				</c:choose>
+				</div>
+				
+				
 				<!-- Hamburger Button -->
 				<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
 
