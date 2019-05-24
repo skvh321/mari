@@ -15,7 +15,6 @@
 					<li><a href="product/list">Rooms</a></li>
 					<li><a href="blog.html">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a href="${pageContext.request.contextPath}/board/list.do">board</a>
 				</ul>
 			</nav>
 						
@@ -49,10 +48,6 @@
 				</div>
 
 				<!-- Header Link -->
-
-				<div class="header_link"><a href="${pageContext.request.contextPath}/member/loginMember.do">Login</a></div>
-
-
 				<div class="header_link">
 				<c:choose>
 					<c:when test="${isLogOn==true and not empty memberInfo }">
@@ -68,7 +63,7 @@
 				</c:choose>
 				</div>
 				
-			
+				
 				<!-- Hamburger Button -->
 				<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
 
