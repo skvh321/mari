@@ -23,32 +23,32 @@
 						</div>
 						
 						<div class="contact_form_container">
-							<form action="#" class="contact_form text-center">
+							<form action="${pageContext.request.contextPath}/member/insertMember.do" class="contact_form text-center">
 								<div class="row">
 									<div class="col-lg-6">
-										<input type="text" class="contact_input" id="id" placeholder="Your id" required="required">
+										<input type="text" class="contact_input" name="id" id="id" placeholder="Your id" required="required">
 									</div>
 									<div class="col-lg-6">
-										<input type="text" class="contact_input" id="pwd" placeholder="Your pwd" required="required">
+										<input type="text" class="contact_input" name="pwd" id="pwd" placeholder="Your pwd" required="required">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-lg-6">
-										<input type="text" class="contact_input" id="name" placeholder="Your name" required="required">
+										<input type="text" class="contact_input" name="name" id="name" placeholder="Your name" required="required">
 									</div>
 									<div class="col-lg-6">
-										<input type="text" class="contact_input" id="tel" placeholder="Your tel" required="required">
+										<input type="text" class="contact_input" name="tel" id="tel" placeholder="Your tel">
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-lg-6">
-										<input type="text" class="contact_input" id="jumin1" placeholder="주민번호앞자리" required="required">
+										<input type="text" class="contact_input" name="jumin1" id="jumin1" placeholder="주민번호앞자리" required="required">
 									</div>
 									<div class="col-lg-6">
-										<input type="text" class="contact_input" id="jumin2" placeholder="뒷자리" required="required">
+										<input type="text" class="contact_input" name="jumin2" id="jumin2" placeholder="뒷자리" required="required">
 									</div>
 								</div>
-								<input type="email" class="contact_input" id="mail" placeholder="your email">
+								<input type="email" class="contact_input" name="mail" id="mail" placeholder="your email">
 								
 								<input style="margin-bottom: 10px" type="submit" class="contact_button" value="확인">
 							</form>

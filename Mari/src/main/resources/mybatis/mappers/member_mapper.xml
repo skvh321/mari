@@ -29,12 +29,22 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		insert into member(
 			seq,
 			id,
-			pwd
+			pwd,
+			name,
+			jumin1,
+			jumin2,
+			tel,
+			mail
 		)
 		values (
 			mem_seq.NEXTVAL,
 			#{id},
-			#{pwd}
+			#{pwd},
+			#{name},
+			#{jumin1},
+			#{jumin2},
+			#{tel},
+			#{mail}
 		)
 	</insert>
 	
