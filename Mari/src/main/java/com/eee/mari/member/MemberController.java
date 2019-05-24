@@ -47,6 +47,7 @@ public class MemberController {
 		ModelAndView mav =new ModelAndView();
 		memberDTO = memberService.memberLogin(loginMap);
 		System.out.println(loginMap.get("id"));
+		System.out.println(memberDTO!=null);
 		
 		if(memberDTO != null && memberDTO.getId()!=null) {
 			HttpSession session = request.getSession();
@@ -90,8 +91,6 @@ public class MemberController {
 		 resEntity = new ResponseEntity(message,responseHeaders,HttpStatus.OK);
 		 return resEntity;
 	}
-	
-	
 	
 	@RequestMapping("/logout.do")
 	public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) throws Exception {
