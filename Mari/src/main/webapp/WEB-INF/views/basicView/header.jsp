@@ -15,8 +15,15 @@
 					<li><a href="product/list">Rooms</a></li>
 					<li><a href="blog.html">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
+					<li><a href="${pageContext.request.contextPath}/board/list.do">board</a>
 				</ul>
 			</nav>
+						
+						
+						<a href="${pageContext.request.contextPath}/member/loginMember.do">Login</a>
+						
+						<a href="${pageContext.request.contextPath}/member/logout.do">Logout</a>
+						
 
 			<!-- Social -->
 			<div class="social header_social">
@@ -42,6 +49,10 @@
 				</div>
 
 				<!-- Header Link -->
+
+				<div class="header_link"><a href="${pageContext.request.contextPath}/member/loginMember.do">Login</a></div>
+
+
 				<div class="header_link">
 				<c:choose>
 					<c:when test="${isLogOn==true and not empty memberInfo }">
@@ -57,7 +68,7 @@
 				</c:choose>
 				</div>
 				
-				
+			
 				<!-- Hamburger Button -->
 				<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
 
@@ -104,7 +115,7 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About us</a></li>
-					<li><a href="rooms.html">Rooms</a></li>
+					<li><a href="product/list">Rooms</a></li>
 					<li><a href="blog.html">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
