@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:if test='${not empty message }'>
 <script>
@@ -9,7 +9,7 @@ window.onload=function()
 }
 
 function result(){
-	alert("���̵�  ��й�ȣ�� Ʋ���ϴ�. �ٽ� �α������ּ���");
+	alert("아이디나  비밀번호가 틀립니다. 다시 로그인해주세요");
 }
 </script>
 </c:if>
@@ -42,8 +42,8 @@ function result(){
 								<input type="text" class="contact_input" name="id" id="id" placeholder="your id" required="required">
 								<input type="text" class="contact_input" name="pwd" id="pwd" placeholder="your pwd" required="required">
 								
-								<input style="margin-bottom: 10px" type="submit" class="contact_button" value="�α���">
-								<input style="margin-bottom: 10px" type="button" class="contact_button" value="ȸ������" onclick="location.href='${pageContext.request.contextPath}/member/joinMember.do'">
+								<input style="margin-bottom: 10px" type="submit" class="contact_button" value="로그인">
+								<input style="margin-bottom: 10px" type="button" class="contact_button" value="회원가입" onclick="location.href='${pageContext.request.contextPath}/member/joinMember.do'">
 							</form>
 						</div>
 					</div>
