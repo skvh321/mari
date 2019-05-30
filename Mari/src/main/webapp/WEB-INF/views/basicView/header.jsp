@@ -12,6 +12,7 @@
 					<li><a href="about.html">About us</a></li>
 					<li><a href="${pageContext.request.contextPath}/product/list">Rooms</a></li>
 					<li><a href="${pageContext.request.contextPath}/board/list.do">board</a>
+					<li><a href="${pageContext.request.contextPath}/NQBoard/NQlist">notice</a>
 				</ul>
 			</nav>
 
